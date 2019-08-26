@@ -10,3 +10,8 @@ const stories = storiesOf('Atoms|Button', module);
   onClick={action('click')}
   />)
 
+  stories.add('input', () => <Button
+  label="Add To-do"
+  onClick={action('click')}
+  isInput
+  />)

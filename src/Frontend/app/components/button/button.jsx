@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import classNames from "classnames";
 
 import "./button.css";
@@ -9,16 +9,16 @@ export class button extends Component {
 
     render(props) {
         
-        const {label, isSecond} = this.props;
+        const {label, isInput} = this.props;
 
         const classes = classNames("btn", {
-            "btn--second": isSecond
+            "btn--input": isInput
         })
 
         return (
-            <div>
+            <Fragment>
                 <button className={classes}>{label}</button>
-            </div>
+            </Fragment>
         )
     }
 }

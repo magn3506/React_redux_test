@@ -1,0 +1,7 @@
+.todo_form {
+     display: grid;
+     grid-template-columns: 3fr 1fr;
+     grid-gap: 5px;
+     width: 400px;
+     justify-content: space-around;   
+    }
